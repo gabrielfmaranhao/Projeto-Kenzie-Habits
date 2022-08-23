@@ -1,0 +1,130 @@
+body {
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+main {
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pre-load {
+    z-index: 100;
+    background-color: #415AF3;
+    width: 100vw;
+    height: 100vh;
+    animation-name: abrir;
+    animation-duration: 2s;
+}
+#container {
+    display: flex;
+    height: max-content;
+    width: 60vw;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px ;
+    overflow: hidden;
+   
+}
+@keyframes abrir {
+    from{
+        width: 0;
+    }
+    to {
+        width:100vw;
+    }
+}
+
+#div_conteudo {
+    display: flex;
+    flex-direction: column;
+    background-color: #4150D2;
+    width: 50%;
+    justify-content: center;
+}
+#div_conteudo h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+#div_formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#div_formulario h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dadosUsuario {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 17px;
+}
+.input {
+    background: #F8F9FA;
+   border: none;
+    border-radius: 4px;
+    padding: 0.563rem 1.125rem;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    width: 90%;
+    max-width: 360px;
+}
+.input:focus {
+    outline-color: #4150D2;
+}
+#botao_entrar {
+    padding: 12px 0px;
+    gap: 0.625rem;
+    border: 2px solid #415AF3;
+    border-radius: 4px;
+    background: #415AF3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 360px;
+    margin: 3.125rem 0;
+    
+}
+@media screen and (max-width:650px) {
+    #container {
+        flex-direction: column;
+        
+    }
+    #container div {
+        width: 100%;
+    }
+}

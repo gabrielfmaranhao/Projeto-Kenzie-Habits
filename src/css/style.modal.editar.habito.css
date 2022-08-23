@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+}
+
+.modalEditarHabito{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000050;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation-name: abrir;
+  animation-duration: 1s;
+
+}
+
+@keyframes abrir {
+    from {
+       display: none;
+       
+    }
+    to {
+        display: flex;
+        
+       
+    }
+}
+
+.recipienteModalEditarHabito{
+    
+    width: 100%;
+    max-width: 480px;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    z-index: 4;
+    margin: auto;
+
+}
+
+.nomeDaModal{
+    width: 100%;
+    height: 2.188rem;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 38px;
+    font-size: 20px;
+}
+
+.paragrafoEditarHabito{
+     width: 100%;
+     height: 1.5rem;
+     font-family: sans-serif;
+     font-weight: 600;
+     size: 1.25rem;
+     line-height: 1.513rem;
+     color: #212529;
+   
+}
+
+.botaoFechar{
+    
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #ADB5BD;
+}
+
+.corpoDaModal{
+   width: 100%;
+    height: 26.188rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formEditarHabitos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    
+    margin-top: 38px;
+} 
+
+.formEditarHabitos label{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #343A40;
+    margin-bottom: 5px;
+    
+}  
+
+.input-modificar-habito:not(.checkbox){
+    background-color: #F1F3F5;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 15px 10px;
+    border: none;
+    font-size: 15px;
+    color:#343A40;
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.paragrafoStatus{
+    
+    height: 40px;
+    font-family: sans-serif;
+}
+
+.blocoBotoes{
+    width: 100%;
+    height: 2.5rem;
+}
+
+.botaoExcluir{
+    width: 20%;
+    height: 2.5rem;
+    background-color: rgba(241, 243, 245, 1);
+    border-radius: 0.25rem;
+    border: none;
+    margin-right: 8px;
+    
+    
+}
+
+.botaoExcluir:hover{
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+
+.botao-Editar{
+    width: 75%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #415AF3;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+
+.botaoEditar:hover{
+    color: black;
+    cursor: pointer;
+}

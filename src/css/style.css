@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #415AF3;
+    width: 80vw;
+    margin: auto;
+}
+
+.btnImg {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    object-fit: contain;
+    background-size: cover;
+}
+
+.dropdown {
+    margin-right: 3.75rem;
+}
+
+#conteudoDropdown {
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btnEditarPerfil {
+    background-color: white;
+    border-radius: 0.62rem;
+    width: 4.7rem;
+    height: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
+.icons {
+    width: 1rem;
+    height: 1rem;
+    fill: rgb(65, 90, 243);
+}
+.btnLogout {
+    background-color: white;
+    border-radius: 0.63rem;
+    width: 4.7rem;
+    height: 1.9rem;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+}
+
+.foto-perfil-menu {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.perfil-topo {
+    background-color: #415AF3;
+    height: 7.5rem;
+    width: 100vw;
+}
+
+.container-topo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    height: 7.5rem;
+
+}
+
+section {
+    margin: auto;
+    width: 80vw;
+}
+
+.foto-perfil {
+    height: 4.4rem;
+    width: 4.4rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.nome-perfil {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 0.6rem;
+}
+
+.cabecalho {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 4.4rem;
+    width: 80vw;
+}
+
+.cabecalho p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 0 0 1.9rem;
+
+}
+
+.btn-criar-habito {
+    width: 5.6rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: 2px solid #415AF3;
+    background-color: #415AF3;
+    color: white;
+}
+.table{
+    height: 23.36rem;
+    overflow: hidden;
+}
+
+table {
+    width: 80vw;
+}
+
+table,
+tr {
+    border: 1px solid #A1A1A1;
+    border-collapse: collapse;
+}
+
+.checkbox {
+    margin: 0.6rem;
+}
+
+.td-categoria {
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 5px;
+    background-color: #D7E4FB;
+    border-radius: 4px;
+    text-align: center;
+    color: #415AF3;
+    font-weight: 600;
+}
+
+.tr-cabecalho {
+    height: 2.5rem;
+    color: #A1A1A1;
+
+    text-decoration: none;
+}
+
+.tarefas-concluidas {
+    cursor: pointer;
+}
+
+.todas-tarefas {
+    cursor: pointer;
+}
+
+.btn-editar-tarefa {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1.9rem;
+    cursor: pointer;
+}
+
+
+.imgBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn-carregar-mais {
+    width: 9.3rem;
+    height: 1.9rem;
+    border: 2px solid #415AF3;
+    border-radius: 4px;
+    background-color: #415AF3;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .td-categoria-mobile {
+        display: none;
+    }
+
+    .td-descricao {
+        display: none;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        margin: 20px 0 20px 45px;
+    }
+    .cabecalho ul{
+        margin: 0;
+      }
+}
